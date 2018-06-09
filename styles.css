@@ -1,0 +1,167 @@
+body {
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+.top {
+  font-family: 'Roboto Slab', serif;
+  background-color:  #e5f3f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.inputs__text:nth-child(2) {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.inputs__text {
+  border: 2px solid #d1d3d4;
+  padding: 5px;
+}
+
+.inputs__text::-webkit-input-placeholder,
+.search__bar::-webkit-input-placeholder {
+  color: #d1d3d4;
+  font-size: 120%;
+}
+
+.btn-save {
+  background-color: #00a79d;
+  color: #ffffff;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+.btn-save:hover {
+  background-color: #045e55;
+}
+.title__first {
+  color: #00a79d;
+}
+
+.title__second {
+  color: #6d6e71;
+}
+
+.search {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.search__bar {
+  border: 2px solid #d1d3d4;
+  padding:5px;
+  margin-top: 10px;
+  width: 76%;
+}
+
+.idea__downvote, .idea__upvote {
+  width:25px;
+  height:25px;
+  margin-right: 10px;
+}
+
+.idea__downvote {
+  /* content: url('downvote.svg'); */
+}
+
+.idea__downvote:hover {
+  content: url('downvote-hover.svg');
+  cursor: pointer;
+}
+
+.idea__upvote:hover {
+  content: url('upvote-hover.svg');
+  cursor: pointer;
+}
+
+.idea__delete:hover {
+  content: url('delete-hover.svg');
+}
+
+.idea__actions {
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.idea__delete {
+  cursor: pointer;
+  position: absolute;
+  width: 25px;
+  height:25px;
+  top: 24px;
+  right: 0;
+}
+
+.idea {
+  border-bottom: 2px solid #d1d3d4;
+  position: relative;
+  width: 80%;
+}
+
+.idea > * {
+  padding: 5px;
+}
+
+.idea__body {
+  color: #939598;
+  font-size: 140%;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.idea__title {
+  color: #6d6e71;
+  margin-bottom: 0;
+}
+
+.idea__word {
+  color: #6d6e71;
+  margin-left: 5px;
+}
+
+.idea__quality {
+  color: #6d6e71;;
+}
+
+
+
+@media (min-width: 600px) {
+  .inputs, .idea {
+    width: 520px;
+  }
+
+  .search__bar {
+    margin-top: 20px;
+    width: 505px;
+  }
+
+}
